@@ -1,11 +1,12 @@
 import "../App.css"
+import Logo from "./Images/logo.svg"
 
 function Navbar() {
     return (
       <>
           <div className="Navbar">
             <div className="Logo">
-              Logo 
+              <img src={Logo} alt="Logo" />
             </div>
             <div className="Navitems">
             <ul >

@@ -1,8 +1,11 @@
+import Logo from "./Images/Logoinvert.png"
+
+
 function Contact() {
     return(
         <>
             <div className="Contact">
-                <div className="ContactLogo">Logo</div>
+                <div className="ContactLogo"><img src={Logo} alt="Logo" /></div>
                  <div className="Lists">
                     <ul>
                         <li className="ContactLink"><a href="#">Home</a></li>
