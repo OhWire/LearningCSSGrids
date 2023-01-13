@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Navbar {
+  width:100vw;
+  height: 10vh;
+
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Karla";
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  background-color: white;
+  box-shadow: 3px 3px rgba(0,0,0,0.06)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.body div{
+  border: 0px 3px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Logo {
   display: flex;
-  flex-direction: column;
+  grid-column: 3/5;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.Navitems {
+  display: flex;
+  grid-column: 6/11;
+  padding:0;
+  margin:0;
+  height: 100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Navitems ul{
+  margin:0;
+  padding: 0em;
+}
+
+
+
+.Navitems ul li {
+  display: inline;
+  padding: 0.3em;
+  font-size: 20px;
+  margin: auto;
+}
+
+.Reservations{
+  margin-left: 0.5em;
+}
+
+.Login{
+  margin-left: 0.5em;
+}
+
+
+
+.HeroSection {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 4fr;
+  margin: 3em;
+  min-width: none;
+  min-height: 20em;
+}
+
+.Description {
+  grid-column: 3/6 ;
+}
+
+.Description h1{
+  font-size: 3em;
+  padding-bottom: 0.2em;
+}
+
+.Description h3 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+.Description p{
+  font-size: 1em;
+  padding-bottom: 4em;
+}
+
+.Description button{
+  font-size: 1.5em;
+  background-color: black;
   color: white;
+  width: 8em;
+  height: 2em;
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.Image {
+  border: 2px solid black;
+  grid-column: 7/11;
+  min-width: 5em;
+  min-height: 3em;
+  max-width: 40em;
+  max-height: 50em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Highlights {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 3fr;
+  margin: 3em;
 }
+
+
+.CTASection{
+  grid-column: 3/11;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.CalltoAction{
+  display: flex;
+
+}
+
+.SpecialsHeader{
+  display: flex;
+  font-size: 2.5em;
+}
+
+.SpecialsHeader h2 {
+  font-size: ;
+}
+
+.ButtonHeader{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+}
+
+
+.Cards {
+  display: flex;
+  grid-column: 3/11;
+  grid-row: 2/2;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100%;
+  width: 100%;
+}
+
+
+.Card{
+  display: grid;
+  margin-left: 3em;
+  margin-right: 3em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  max-width: 12em;
+  min-width: 10em;
+}
+
+
+ .SpecialImg {
+  display: flex;
+  border: 3px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.SpecialDescription{
+  margin-top: 1em;
+  
+}
+
+.SpecialDescription h3 {
+  padding-bottom: 1em;
+}
+
+.SpecialDescription p {
+  padding-bottom: 1em;
+}
+
+
+
+.Testimonials {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 2fr;
+}
+
+.TestimonialsHeading{
+  display: flex;
+  grid-row: 1/1;
+  grid-column: 1/-1;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  letter-spacing: 0.3em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.Profiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: 2/2;
+  grid-column: 1/-1;
+  padding: 2em 2em 0em 2em;
+  margin-bottom: 4em;
+}
+
+.Profile{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:1fr 2fr 1fr;
+}
+
+.Profile h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  grid-row: 1/1;
+  grid-column: 2/2;
+
+}
+
+.Profile p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/2;
+  grid-row: 3/3;
+}
+
+.PersonImage {
+  display:flex;
+  border: 3px solid black;
+  height: 5em;
+  width: 100% ;
+  grid-row: 2/2;
+  grid-column: 2/2;
+  align-items: center;
+  justify-content: center;
+  min-width: 5em;
+  max-width: 7em;
+}
+
+
+.StarRating {
+  display: flex;
+  grid-row: 2/2;
+  grid-column: 3/3;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutSection{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(3,1fr);
+  margin: 3em;
+}
+
+.AboutDescription{
+  grid-column: 3/6;
+  grid-row: 1/3;
+}
+
+.AboutDescription h2 {
+  padding-top: 0.5em;
+  font-size: 3em;
+}
+
+.AboutDescription h3{
+  padding-top: 0.5em;
+  font-size: 1.7em;
+}
+
+.AboutDescription p{
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+
+.AboutImage1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  grid-row: 2/4;
+  grid-column: 7/10;
+  min-width: 10em;
+  min-height: 25em;
+  max-width: 30em;
+  max-height: 40em;
+}
+
+.AboutImage2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  grid-row: 1/3;
+  grid-column: 9/12;
+  min-width: 10em;
+  min-height: 25em;
+  max-width: 30em;
+  max-height: 40em;
+}
+
+.Contact{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 1fr;
+  padding-top: 2em;
+}
+
+.ContactLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  grid-column: 3/5;
+  min-height: 12em;
+  min-width: 7em;
+  max-height: 14em;
+  max-width: 9em;
+  
+}
+
+.Lists {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 6/12;
+  
+}
+
+.Lists ul {
+  list-style-type: none;
+
+}
+
+.Lists ul li{
+  padding-bottom: 0.7em;
+  font-size: 1.25em;
+}
+
+.Lists ul li a{
+  text-decoration: none;
+  
+}
+
+.Nonlink {
+  padding-bottom: 1em;
+}
+
+
+
