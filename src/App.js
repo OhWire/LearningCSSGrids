@@ -1,23 +1,24 @@
+import {Route, Routes} from "react-router-dom"
 import Navbar from './components/Navbar';
-import './App.css';
-import Hero from './components/Hero';
-import Highlights from './components/Highlights';
-import Testimonials from './components/Testimonials';
-import About from './components/About';
-import Contact from './components/contact';
-import "@fontsource/karla"
-import "@fontsource/markazi-text";
+import Booking from "./pages/booking";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import About from "./pages/About";
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Hero/>
-      <Highlights/>
-      <Testimonials/>
-      <About/>
-      <Contact/>
+      <div className="">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/booking" element={<Booking/>} />
+            <Route path="/Menu" element={<Menu/>} />
+            <Route path="/aboutpage" element={<About/>} />
+          </Routes>
+      </div>
     </>
+    
   );
 }
 
